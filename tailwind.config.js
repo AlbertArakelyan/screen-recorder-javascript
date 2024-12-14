@@ -2,7 +2,6 @@
 module.exports = {
   content: ['*.html'],
   mode: 'jit',
-  darkMode: false,
   theme: {
     extend: {},
     fontFamily: {

@@ -3,9 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="dist/main.css">
+  <title>Screen Recorder</title>
 </head>
-<body>
-  
+<body class="bg-gray-800 text-white">
+  <header class="bg-gray-900">
+    <div class="container mx-auto flex justify-center items-center py-4">
+      <h1 class="text-2xl font-bold">Screen Recorder</h1>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+    <div class="container mx-auto py-8 px-4">
+      <h2 class="text-xl text-gray-500 uppercase font-light mb-4">Viedo Recorder</h2>
+      <video class="video-feedback bg-black w-full h-auto mb-4" src="" autoplay></video>
+
+      <div class="flex justify-center items-center -mx-4 mb-8">
+        <button 
+          class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4 uppercase text-lg font-bold transition duration-300 hover:opacity-90 disabled:opacity-50"
+        >
+          Start Recording
+        </button>
+        <button 
+          class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4 uppercase text-lg font-bold transition duration-300 hover:opacity-90 disabled:opacity-50"
+          disabled
+        >
+          Stop Recording
+        </button>
+      </div>
+
+      <div class="recorded-video-wrap hidden">
+        <h2 class="text-xl text-gray-500 uppercase font-light mb-4">Download your video</h2>
+        <video src="" class="recorded-video bg-black w-full h-auto mb-4"></video>
+        <div class="flex justify-center items-center -mx-4 mb-8">
+          <a 
+            class="download-video text-center mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4 uppercase text-lg font-bold transition duration-300 hover:opacity-90 disabled:opacity-50"
+            href=""
+            disabled
+          >
+            Download video
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
